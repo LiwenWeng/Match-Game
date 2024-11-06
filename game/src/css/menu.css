@@ -2,8 +2,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7%;
-    width: 40%;
+    margin-top: 5%;
+    width: 70%;
 }
 
 .bg {
@@ -25,13 +25,23 @@
     min-height: 50%;
 }
 
-.glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+.menu-button {
+    position: fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+    background: none;
+    border: 0;
+    cursor: pointer;
 }
 
-.invert { filter: invert(100%); }
+.menu-button:hover {
+    font-size: 4vw;
+}
+
+#help {
+    margin-top: 10%;
+}
+
+.brighten { filter: brightness(120%); }
