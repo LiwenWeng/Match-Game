@@ -1,47 +1,56 @@
-#menu-title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    width: 70%;
+@font-face {
+    font-family: 'BubbleFont'; 
+    src: url("/game/public/assets/fonts/BlackBubbles-Regular.ttf") format('truetype');
+    font-weight: normal;        
+    font-style: normal;        
 }
 
-.bg {
-    position: fixed; 
-    top: -50%; 
-    left: -50%; 
-    width: 200%; 
-    height: 200%;
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url("../../public/assets/images/game_background.gif");
+    background-size: cover;
 }
 
-.bg img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto; 
-    min-width: 50%;
-    min-height: 50%;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    height: 100vh;       
 }
 
-.menu-button {
-    position: fixed;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 3vw;
-    background: none;
+.container img {
+    max-width: 85%;  
+    max-height: 50vh;       
+    height: auto;            
+    margin-top: -15vh;   
+    margin-bottom: -5vh;  
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;    
+    z-index: 1;         
+}
+
+.menu-buttons button {
+    padding: 1vh 2vw;   
+    font-family: "BubbleFont";
+    font-size: 10vh;
+    color: rgba(255, 192, 203, 0.75);
+    cursor: pointer; 
+    margin-bottom: 1rem;   
     border: 0;
-    cursor: pointer;
+    background: none; 
+    transition: transform 0.2s ease, text-shadow 0.3s ease;;  
 }
 
-.menu-button:hover {
-    font-size: 4vw;
-}
-
-#help {
-    margin-top: 10%;
+button:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 4px rgb(255, 194, 204)
 }
 
 .brighten { filter: brightness(120%); }
