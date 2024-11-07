@@ -1,4 +1,4 @@
-const buttons = document.getElementsByClassName("container");
+const buttons = document.getElementsByClassName("container")[0].children[1].children;
 
 const onClick = (event) => {
 	const button = event.target;
