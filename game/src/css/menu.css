@@ -1,15 +1,8 @@
-@font-face {
-    font-family: 'BubbleFont'; 
-    src: url("/game/public/assets/fonts/BlackBubbles-Regular.ttf") format('truetype');
-    font-weight: normal;        
-    font-style: normal;        
-}
-
 html, body {
     height: 100%;
     margin: 0;
     overflow: hidden;
-    background-image: url("../../public/assets/images/game_background.gif");
+    background-image: url("../../public/assets/ui/game_background.gif");
     background-size: cover;
 }
 
@@ -33,7 +26,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 2vh;    
-    z-index: 1;         
+    z-index: 1;   
 }
 
 .menu-buttons button {
@@ -46,13 +39,6 @@ html, body {
     border: 0;
     background: none; 
     transition: transform 0.2s ease, text-shadow 0.3s ease;;  
-}
-
-
-
-button:hover {
-    transform: scale(1.1);
-    text-shadow: 0 0 4px rgb(255, 194, 204)
 }
 
 .brighten { filter: brightness(120%); }

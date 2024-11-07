@@ -5,21 +5,35 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>The Match Game</title>
+
 		<link rel="stylesheet" href="../../src/css/menu.css" />
+		<link rel="stylesheet" href="../../src/css/popup.css">
+		<link rel="stylesheet" href="../../src/css/fonts.css">
+		<link rel="stylesheet" href="../../src/css/buttons.css">
+
 		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
 	</head>
 	<body>
 		<div class="container">
-			<img class="brighten" src="../../public/assets/images/menu_title.png" />
+			<img class="brighten" src="../../public/assets/ui/menu_title.png" />
 
 			<div class="menu-buttons">
 				<button id="play">Play</button>
 				<button id="help">Help</button>
 			</div>
-		</div>
 
-		<div id="help-popup"></div>
-
+			<div class="popup">
+				<img src="../assets/ui/help-popup/popup.png" />
+				<div class="popup-content">
+					<p>
+						The match game is an intense, competitive game where you are revealing images in a
+						desperate search for two that match. As you find matches, those images will be revealed, but
+						watch out! The computer is keeping track of the number of times you click and judging your
+						every move.
+					</p>
+					<button class="popup-button"></button>
+				</div>
+			</div>
 		</div>
 
 		<script type="module" src="../../src/js/menu.js"></script>

@@ -1,0 +1,50 @@
+.popup {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    z-index: 100;
+}
+
+.popup img {
+    max-width: 85%;  
+    max-height: 140%;  
+    margin-top: 0%;
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    margin-top: 6.5%;
+
+    text-align: center;
+    font-family: "Fredoka";
+    font-size: 3.3vh;
+    color: rgb(255, 0, 221);
+}
+
+.popup-content button {
+    background-image: url("../../public/assets/ui/help-popup/confirm.png");
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+    width: 40%;
+    height: 40%;
+    z-index: 101;
+
+    transition: transform 0.3s ease;
+}
