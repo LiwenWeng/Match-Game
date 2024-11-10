@@ -1,6 +1,5 @@
 html, body {
     height: 100%;
-    margin: 0;
     overflow: hidden;
     background-image: url("../../public/assets/ui/game_background.gif");
     background-size: cover;
@@ -10,35 +9,37 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
-    height: 100vh;       
+    align-items: center;  
+     
+    height: 100vh;     
+    width: 100vw;  
 }
 
 .container img {
-    max-width: 85%;  
-    max-height: 50vh;       
-    height: auto;            
-    margin-top: -15vh;   
-    margin-bottom: -5vh;  
+    margin-bottom: -3%;
+    max-width: 100vmax;  
+    max-height: 60vmax;
 }
 
 .menu-buttons {
     display: flex;
     flex-direction: column;
-    gap: 2vh;    
+    gap: 2vh;
     z-index: 1;   
 }
 
 .menu-buttons button {
-    padding: 1vh 2vw;   
     font-family: "BubbleFont";
-    font-size: 10vh;
+    font-size: 4vmax;
     color: rgba(255, 192, 203, 0.75);
-    cursor: pointer; 
-    margin-bottom: 1rem;   
+
+    margin-bottom: 15%;   
     border: 0;
+    cursor: pointer; 
     background: none; 
-    transition: transform 0.2s ease, text-shadow 0.3s ease;;  
+
+    padding: 2vh 2vw;   
+    transition: transform 0.2s ease, text-shadow 0.3s ease;
 }
 
 .brighten { filter: brightness(120%); }

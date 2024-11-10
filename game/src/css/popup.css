@@ -16,14 +16,17 @@
     0% {
         transform: translateY(0);
         opacity: 1;
+        z-index: 100;
     }
     40% {
         transform: translateY(-15%);
         opacity: 1;
+        z-index: 100;
     }
     100% {
         transform: translateY(100%);
         opacity: 0;
+        z-index: 0;
     }
 }
 
@@ -35,13 +38,13 @@
     flex-direction: column;
     width: 60%;
     height: 60%;
-    z-index: 100;
     opacity: 0;
     transform: translateY(100%);
     transition: opacity 0.4s;
 }
 
 .popup.open {
+    z-index: 100;
     opacity: 1;
     animation: slideInBounce 0.4s ease-out forwards;
 }
@@ -52,9 +55,26 @@
 }
 
 .popup img {
-    max-width: 85%;  
-    max-height: 140%;  
-    margin-top: 0%;
+    position: absolute;
+    max-width: 60vmax;  
+    max-height: 60vmax;  
+}
+
+.popup button {
+    background-image: url("../../public/assets/ui/help-popup/confirm.png");
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+    margin-top: 22vmax;
+    width: 18vmax;
+    height: 5vmax;
+    z-index: 101;
+
+    transition: transform 0.3s ease;
 }
 
 .popup-content {
@@ -64,29 +84,11 @@
     flex-direction: column;
 
     position: absolute;
-    width: 65%;
-    height: 65%;
-    margin-top: 6.5%;
+    width: 45vmax;
+    height: 60vmax;
 
     text-align: center;
     font-family: "Fredoka";
-    font-size: 3.3vh;
+    font-size: 2vmax;
     color: rgb(255, 0, 221);
-}
-
-.popup-content button {
-    background-image: url("../../public/assets/ui/help-popup/confirm.png");
-    background-repeat: no-repeat;
-    background-size: 95%;
-    background-position: center;
-
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    
-    width: 40%;
-    height: 40%;
-    z-index: 101;
-
-    transition: transform 0.3s ease;
 }
