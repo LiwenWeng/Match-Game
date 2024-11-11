@@ -1,0 +1,24 @@
+@keyframes firstHalfCoverAnimation {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes secondHalfCoverAnimation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    z-index: 1000;
+    transform: translateX(-100%);
+}
+
+#game {
+    transform: translateX(0);
+}

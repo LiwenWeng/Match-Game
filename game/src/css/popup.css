@@ -37,7 +37,7 @@
     align-items: center;
     flex-direction: column;
     width: 60%;
-    height: 60%;
+    height: 100vh;
     opacity: 0;
     transform: translateY(100%);
     transition: opacity 0.4s;
@@ -70,8 +70,8 @@
     cursor: pointer;
     
     margin-top: 22vmax;
-    width: 18vmax;
-    height: 5vmax;
+    width: 20vmax;
+    height: 20vmax;
     z-index: 101;
 
     transition: transform 0.3s ease;
@@ -84,8 +84,9 @@
     flex-direction: column;
 
     position: absolute;
+    margin-bottom: 4.5vmax;
     width: 45vmax;
-    height: 60vmax;
+    height: 20vmax;
 
     text-align: center;
     font-family: "Fredoka";

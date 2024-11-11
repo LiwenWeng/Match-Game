@@ -1,0 +1,8 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../../public/assets/ui/game_background.gif");
+    background-size: cover;
+}
+
+.brighten { filter: brightness(120%); }
