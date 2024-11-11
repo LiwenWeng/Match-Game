@@ -69,7 +69,7 @@
     background-color: transparent;
     cursor: pointer;
     
-    margin-top: 22vmax;
+    margin-top: 16vmax;
     width: 20vmax;
     height: 20vmax;
     z-index: 101;
@@ -84,7 +84,7 @@
     flex-direction: column;
 
     position: absolute;
-    margin-bottom: 4.5vmax;
+    margin-top: -4.5vmax;
     width: 45vmax;
     height: 20vmax;
 
