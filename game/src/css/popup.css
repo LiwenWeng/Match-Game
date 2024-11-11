@@ -4,7 +4,7 @@
         opacity: 0;
     }
     60% {
-        transform: translateY(-15%);
+        transform: translateY(-8%);
         opacity: 1;
     }
     100% {
@@ -19,7 +19,7 @@
         z-index: 100;
     }
     40% {
-        transform: translateY(-15%);
+        transform: translateY(-8%);
         opacity: 1;
         z-index: 100;
     }
@@ -56,8 +56,8 @@
 
 .popup img {
     position: absolute;
-    max-width: 60vmax;  
-    max-height: 60vmax;  
+    max-width: 50vmax;  
+    max-height: 50vmax;  
 }
 
 .popup button {
@@ -69,7 +69,7 @@
     background-color: transparent;
     cursor: pointer;
     
-    margin-top: 16vmax;
+    margin-top: 12vmax;
     width: 20vmax;
     height: 20vmax;
     z-index: 101;
@@ -84,12 +84,12 @@
     flex-direction: column;
 
     position: absolute;
-    margin-top: -4.5vmax;
-    width: 45vmax;
+    margin-top: -7vmax;
+    width: 40vmax;
     height: 20vmax;
 
     text-align: center;
     font-family: "Fredoka";
-    font-size: 2vmax;
+    font-size: 1.75vmax;
     color: rgb(255, 0, 221);
 }

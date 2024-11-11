@@ -1,3 +1,3 @@
-const cover = document.querySelector(".cover");
+import { completeCoverTransition } from "./utils/coverTransition.mjs";
 
-cover.style.animation = "secondHalfCoverAnimation 1s forwards";
+completeCoverTransition();
