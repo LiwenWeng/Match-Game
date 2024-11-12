@@ -17,8 +17,6 @@
     background: linear-gradient(120deg, #ffd6e7, #fff0b3);
     z-index: 1000;
     transform: translateX(-100%);
-
-    visibility: ;
 }
 
 #game {

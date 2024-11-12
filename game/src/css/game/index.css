@@ -1,8 +1,20 @@
+@keyframes upAndDown {
+    0% { transform: translateY(0); } 
+    50% { transform: translateY(-1.5vmin); }
+    100% { transform: translateY(0); } 
+}
+
 #match-board {
     position: absolute;
-    margin-left: -35vmax;
+    margin-left: -15vmax;
     width: 40vmax;
     height: auto;
+    background-color: rgba(255, 141, 238, 0.35);
+    box-shadow: 0 0 1vmax rgb(255, 141, 238);
+}
+
+.container {
+    animation: upAndDown 2s ease-in-out infinite;
 }
 
 .container td {
@@ -16,7 +28,7 @@
 .card {
     width: 100%;
     height: 100%;
-    margin-left: -17.5vmax;
+    margin-left: -7.5vmax;
     transform-style: preserve-3d;
     transition: transform 1.25s;
     position: relative;
@@ -39,6 +51,8 @@
 .container table img {
     width: 9vmax;
     height: auto;
+    background-color: rgba(255, 0, 43, 0.35);
+    box-shadow: 0 0 0.5vmax rgb(255, 0, 43);
 }
 
 .front {

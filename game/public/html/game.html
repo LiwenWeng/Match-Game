@@ -5,17 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Match Game</title>
 
-        <link rel="stylesheet" href="../../src/css/index.css">
-        <link rel="stylesheet" href="../../src/css/game.css">
-        <link rel="stylesheet" href="../../src/css/cover.css">
-        <link rel="stylesheet" href="../../src/css/fonts.css">
-        <link rel="stylesheet" href="../../src/css/buttons.css">    
+        <link rel="stylesheet" href="../../src/css/common/index.css">
+        <link rel="stylesheet" href="../../src/css/common/cover.css">
+        <link rel="stylesheet" href="../../src/css/common/fonts.css">
+        <link rel="stylesheet" href="../../src/css/common/buttons.css">  
+        <link rel="stylesheet" href="../../src/css/game/index.css">
+        <link rel="stylesheet" href="../../src/css/game/info.css"> 
     </head>
 
     <body>
         <div class="cover" id="game"></div>
         <div class="container">
-
+            <img id="match-board" src="../assets/ui/game/match_board.png">
+            <div id="game-info">
+                <img src="../assets/ui/game/info.png">
+                <div class="info-content">
+                    <h3 id="score">Score: 0</h3>
+                    <button id="reset">Reset</button>
+                    <button id="quit">Quit</button>
+                </div>
+            </div>
         </div>
 
         <script type="module" src="../../src/js/game.js"></script>
