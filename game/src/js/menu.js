@@ -2,6 +2,7 @@ import { completeCoverTransition, startCoverTransition } from "./utils/coverTran
 
 const playButton = document.getElementById("play");
 const helpButton = document.getElementById("help");
+const statsButtton = document.getElementById("stats")
 
 const helpPopup = document.getElementById("help-popup");
 const confirmPopupButton = document.getElementById("confirm");
@@ -21,3 +22,7 @@ confirmPopupButton.onclick = () => {
 playButton.onclick = () => {
 	startCoverTransition("game", true);
 };
+
+statsButtton.onclick = () => {
+	
+}

@@ -38,11 +38,6 @@ document.addEventListener("clickState", (e) => {
 				card1.setAttribute("flipped", false);
 				card2.setAttribute("flipped", false);
 			}, 2000);
-		} else {
-			matchedAmount++;
-			if (matchedAmount === 8) {
-				location.reload();
-			}
-		}
+		} else matchedAmount++;
 	}
 });
