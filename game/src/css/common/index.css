@@ -33,6 +33,12 @@ html, body {
     }
 }
 
+@keyframes upAndDown {
+    0% { transform: translateY(0); } 
+    50% { transform: translateY(-1.5vmin); }
+    100% { transform: translateY(0); } 
+}
+
 .shake {
     display: inline-block;
     animation: shake 0.5s ease-in-out;

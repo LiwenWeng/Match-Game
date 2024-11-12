@@ -40,5 +40,5 @@ score.addEventListener("animationend", () => {
 	score.classList.remove("shake");
 });
 
-resetButton.onclick = () => location.reload();
+resetButton.onclick = () => startCoverTransition("game");
 quitButton.onclick = () => startCoverTransition("menu");

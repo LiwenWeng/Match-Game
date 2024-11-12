@@ -1,9 +1,3 @@
-@keyframes upAndDown {
-    0% { transform: translateY(0); } 
-    50% { transform: translateY(-1.5vmin); }
-    100% { transform: translateY(0); } 
-}
-
 #match-board {
     position: absolute;
     margin-left: -15vmax;
