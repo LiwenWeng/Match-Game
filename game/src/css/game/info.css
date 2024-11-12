@@ -59,6 +59,7 @@
 }
 
 #game-info .info-content h3 {
+    display: inline-block;
     display: inline-flex;
     align-items: center;
     justify-content: center;

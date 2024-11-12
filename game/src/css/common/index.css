@@ -15,4 +15,27 @@ html, body {
     width: 100vw;  
 }
 
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.shake {
+    display: inline-block;
+    animation: shake 0.5s ease-in-out;
+}
+
 .brighten { filter: brightness(120%); }
