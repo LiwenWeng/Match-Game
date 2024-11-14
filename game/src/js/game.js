@@ -47,6 +47,18 @@ Array.from(cards).forEach((card) => {
 });
 
 document.addEventListener("score", () => {
+	const isBestScore =
+		clickAmount > 15 && (clickAmount < datastore.get("bestScore") || datastore.get("bestScore") === 0);
+	const isWorstScore = clickAmount > datastore.get("worstScore") - 1 && datastore.get("worstScore") !== 0;
+
+	score.style.animation = isBestScore
+		? "shake 0.3s ease-in-out infinite"
+		: isWorstScore
+			? "shake 0.6s ease-in-out infinite"
+			: "";
+	score.style.color = isBestScore ? "red" : isWorstScore ? "cyan" : "white";
+	score.style.backgroundColor = isBestScore || isWorstScore ? "black" : "rgba(255, 109, 250, 0.466)";
+
 	score.innerHTML = `Score: ${clickAmount}`;
 	score.classList.add("shake");
 });

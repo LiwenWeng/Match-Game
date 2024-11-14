@@ -27,6 +27,7 @@
     transform-style: preserve-3d;
     transition: transform 0.75s;
     position: relative;
+    cursor: pointer;
 }  
 
 .card.flipped {
