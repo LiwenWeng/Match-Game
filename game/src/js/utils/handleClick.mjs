@@ -1,3 +1,6 @@
+import { clickAmount } from "../game.js";
+import { datastore } from "./datastore.mjs";
+
 export let canClick = true;
 let matchedAmount = 0;
 let card1,
@@ -38,6 +41,16 @@ document.addEventListener("clickState", (e) => {
 				card1.setAttribute("flipped", false);
 				card2.setAttribute("flipped", false);
 			}, 1000);
-		} else matchedAmount++;
+		} else {
+			datastore.increment("totalCardsMatched");
+			matchedAmount++;
+			if (matchedAmount === 8) {
+				datastore.increment("gamesWon");
+				if (clickAmount === 16) datastore.increment("perfectGamesWon");
+				if (clickAmount < datastore.get("bestScore") || datastore.get("bestScore") === 0)
+					datastore.set("bestScore", clickAmount);
+				if (clickAmount > datastore.get("worstScore")) datastore.set("worstScore", clickAmount);
+			}
+		}
 	}
 });

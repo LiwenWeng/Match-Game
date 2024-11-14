@@ -101,3 +101,11 @@
     font-size: 1.75vmax;
     color: rgb(255, 0, 221);
 }
+
+#stats-content {
+    margin-top: -8.7vmax;
+}
+
+#stats-content p {
+    margin-bottom: -1.4vmax;
+}

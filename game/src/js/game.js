@@ -1,5 +1,6 @@
 import { completeCoverTransition, startCoverTransition } from "./utils/coverTransition.mjs";
 import { createGameTable } from "./utils/createGameTable.mjs";
+import { datastore } from "./utils/datastore.mjs";
 import { canClick, handleClick } from "./utils/handleClick.mjs";
 
 const cards = document.getElementsByClassName("card");
@@ -7,7 +8,7 @@ const score = document.querySelector("#score");
 const resetButton = document.querySelector("#reset");
 const quitButton = document.querySelector("#quit");
 
-let clickAmount = 0;
+export let clickAmount = 0;
 let clickState = 0;
 const scoreEvent = new CustomEvent("score");
 
@@ -26,6 +27,7 @@ Array.from(cards).forEach((card) => {
 			card.setAttribute("flipped", true);
 			card.classList.toggle("flipped");
 
+			datastore.increment("totalCardFlips");
 			clickAmount++;
 			clickState++;
 			document.dispatchEvent(scoreEvent);
