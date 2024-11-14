@@ -67,5 +67,5 @@ score.addEventListener("animationend", () => {
 	score.classList.remove("shake");
 });
 
-resetButton.onclick = () => startCoverTransition("game");
+resetButton.onclick = () => startCoverTransition("match");
 quitButton.onclick = () => startCoverTransition("index");

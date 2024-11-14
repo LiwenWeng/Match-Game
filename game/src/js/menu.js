@@ -41,7 +41,7 @@ statsConfirmButton.onclick = () => {
 };
 
 playButton.onclick = () => {
-	startCoverTransition("game", true);
+	startCoverTransition("match");
 };
 
 datastore.useStats((stats) => {

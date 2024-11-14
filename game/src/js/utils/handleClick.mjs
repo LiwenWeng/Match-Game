@@ -1,4 +1,4 @@
-import { clickAmount } from "../game.js";
+import { clickAmount } from "../match.js";
 import { datastore } from "./datastore.mjs";
 
 export let canClick = true;
