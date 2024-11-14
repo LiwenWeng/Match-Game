@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     overflow: hidden;
-    background-image: url("../../../public/assets/ui/game_background.gif");
+    background-image: url("https://liwenweng.github.io/The-Match-Game/game/public/assets/ui/game_background.gif");
     background-size: cover;
 }
 

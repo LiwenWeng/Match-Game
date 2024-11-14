@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'BubbleFont'; 
-    src: url("/game/public/assets/fonts/BlackBubbles-Regular.ttf") format('truetype');
+    src: url("https://liwenweng.github.io/The-Match-Game/game/public/assets/fonts/BlackBubbles-Regular.ttf") format('truetype');
     font-weight: normal;        
     font-style: normal;        
 }
 
 @font-face {
     font-family: 'Fredoka'; 
-    src: url("/game/public/assets/fonts/Fredoka.ttf") format('truetype');
+    src: url("https://liwenweng.github.io/The-Match-Game/game/public/assets/fonts/Fredoka.ttf") format('truetype');
     font-weight: normal;        
     font-style: normal;        
 }

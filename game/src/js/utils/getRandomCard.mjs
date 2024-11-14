@@ -19,12 +19,12 @@ export const getRandomCard = () => {
 	const front = cardElement.appendChild(document.createElement("div"));
 	front.classList.add("front");
 	const image = front.appendChild(document.createElement("img"));
-	image.src = `../../public/assets/ui/match/cards/${card}.png`;
+	image.src = `https://liwenweng.github.io/The-Match-Game/game/public/assets/ui/match/cards/${card}.png`;
 
 	const back = cardElement.appendChild(document.createElement("div"));
 	back.classList.add("back");
 	const cardBack = back.appendChild(document.createElement("img"));
-	cardBack.src = "../../public/assets/ui/match/card_back.png";
+	cardBack.src = "https://liwenweng.github.io/The-Match-Game/game/public/assets/ui/match/card_back.png";
 
 	return cardElement;
 };
