@@ -68,4 +68,4 @@ score.addEventListener("animationend", () => {
 });
 
 resetButton.onclick = () => startCoverTransition("game");
-quitButton.onclick = () => startCoverTransition("menu");
+quitButton.onclick = () => startCoverTransition("index");

@@ -51,6 +51,6 @@
     box-shadow: 0 0 0.5vmax rgb(255, 0, 43);
 }
 
-.back {
+.front {
     transform: rotateY(180deg);
 }
