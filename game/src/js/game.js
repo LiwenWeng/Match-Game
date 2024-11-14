@@ -15,20 +15,33 @@ completeCoverTransition();
 createGameTable();
 
 Array.from(cards).forEach((card) => {
+	const front = card.children[0].children[0];
+	const back = card.children[1].children[0];
+
 	card.onclick = () => {
-		if (card.getAttribute("flipped") === "true") return;
-		if (!canClick) return;
+		if (card.getAttribute("flipped") === "true" || !canClick) {
+			front.classList.add("shake");
+			back.classList.add("shake");
+		} else {
+			card.setAttribute("flipped", true);
+			card.classList.toggle("flipped");
 
-		card.setAttribute("flipped", true);
-		card.classList.toggle("flipped");
+			clickAmount++;
+			clickState++;
+			document.dispatchEvent(scoreEvent);
 
-		clickAmount++;
-		clickState++;
-		document.dispatchEvent(scoreEvent);
-
-		handleClick(card, clickState);
-		if (clickState === 2) clickState = 0;
+			handleClick(card, clickState);
+			if (clickState === 2) clickState = 0;
+		}
 	};
+
+	front.addEventListener("animationend", () => {
+		front.classList.remove("shake");
+	});
+
+	back.addEventListener("animationend", () => {
+		back.classList.remove("shake");
+	});
 });
 
 document.addEventListener("score", () => {
